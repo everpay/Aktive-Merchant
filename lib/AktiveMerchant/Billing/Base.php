@@ -18,7 +18,7 @@ class Base
     /**
      * @var string
      */
-    const VERSION = "1.1.1";
+    const VERSION = "2.0.0-alpha";
 
     /**
      * @var string
@@ -67,7 +67,9 @@ class Base
      * @param  string $name    the underscored name of the gateway.
      * @param  array  $options the options for gateway construct.
      *
-     * @return AktiveMerchant\Billing\Gateway the gateway instance
+     * @return \AktiveMerchant\Billing\Gateway the gateway instance
+     *
+     * @throws Exception
      */
     public static function gateway($name = null, $options = array())
     {
